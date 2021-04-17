@@ -1,2 +1,2 @@
 # react-sticky-refaktor
-Created with CodeSandbox
+Создано с помощью CodeSandbox
