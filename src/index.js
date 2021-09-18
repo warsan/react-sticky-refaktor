@@ -11,13 +11,13 @@ const containerStyle = {
 };
 
 function App() {
-  const handleStuck = target => {
+  const handleStuck = (target) => {
     // console.log(`Stuck!`, target)
     // target.style.backgroundColor = '#4caf50'
     // target.style.boxShadow =
     //   '0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4)'
   };
-  const handleUnstuck = target => {
+  const handleUnstuck = (target) => {
     // console.log(`UNstuck!`, target)
     // target.style.backgroundColor = 'rebeccapurple'
     // target.style.boxShadow = ''
@@ -35,7 +35,7 @@ function App() {
   };
 
   const stickySectionElements = Array.from({ length: 10 }, (_, i) => i + 1).map(
-    key => (
+    (key) => (
       <StickyBoundary
         key={key}
         style={{ height: "55vh" }}
@@ -46,7 +46,7 @@ function App() {
         <Sticky id={key} as="h1">
           Липкая шапка {key}
         </Sticky>
-        <h3>{key} -- Некий контент под липкой шапкой</h3>
+        <h3>{key} — Некий контент под липкой шапкой</h3>
         <article>
           Не следует, однако забывать, что дальнейшее развитие различных форм
           деятельности способствует подготовке и реализации форм развития.
